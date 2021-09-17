@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="285.0" prefWidth="781.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.charith.supermarket.controller.AdminDashBoardFormController">
+   <children>
+      <Label layoutX="278.0" layoutY="-6.0" text="Management">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="btnItem" fitHeight="144.0" fitWidth="144.0" layoutX="52.0" layoutY="71.0" onMouseClicked="#itemOnAction" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/3058777-200.png" />
+         </image></ImageView>
+      <ImageView fx:id="btnProduct" fitHeight="144.0" fitWidth="144.0" layoutX="243.0" layoutY="71.0" onMouseClicked="#productOnAction" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/1247947-200.png" />
+         </image></ImageView>
+      <ImageView fx:id="btnReports" fitHeight="144.0" fitWidth="144.0" layoutX="603.0" layoutY="71.0" onMouseClicked="#reportOnAction" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/download.png" />
+         </image></ImageView>
+      <Label layoutX="62.0" layoutY="228.0" text="Manage Item">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="237.0" layoutY="228.0" text="Manage Product">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="437.0" layoutY="228.0" text="Manage User">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Line endX="131.0" layoutX="385.0" layoutY="47.0" startX="-128.0" />
+      <ImageView fx:id="btnUser" fitHeight="154.0" fitWidth="144.0" layoutX="427.0" layoutY="66.0" onMouseClicked="#userOnAction" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/516-5167304_transparent-background-white-user-icon-png-png-download.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="612.0" layoutY="228.0" text="System Reports">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="btnClose" fitHeight="43.0" fitWidth="44.0" layoutX="737.0" layoutY="-1.0" onMouseClicked="#closeOnAction" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/cl.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

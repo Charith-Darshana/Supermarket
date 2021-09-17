@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="505.0" prefWidth="627.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.charith.supermarket.controller.ManageItemFormController">
+   <children>
+      <Label layoutX="214.0" prefHeight="50.0" prefWidth="200.0" text="Manage Item">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="518.0" layoutY="9.0" prefHeight="32.0" prefWidth="109.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPropertyID" focusTraversable="false" layoutX="43.0" layoutY="85.0" promptText="Property ID">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtBatch" focusTraversable="false" layoutX="43.0" layoutY="128.0" promptText="Batch">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPrice" focusTraversable="false" layoutX="43.0" layoutY="175.0" promptText="Price">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtQty" focusTraversable="false" layoutX="265.0" layoutY="128.0" promptText="Qty">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Line endX="107.0" layoutX="317.0" layoutY="50.0" startX="-119.0" strokeWidth="2.0" />
+      <TextField fx:id="txtDiscount" focusTraversable="false" layoutX="265.0" layoutY="85.0" promptText="Discount">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="cmbProductID" editable="true" focusTraversable="false" layoutX="265.0" layoutY="175.0" prefHeight="31.0" prefWidth="187.0" promptText="Select Product ID" />
+      <CheckBox fx:id="setDiscount" focusTraversable="false" layoutX="479.0" layoutY="118.0" mnemonicParsing="false" onAction="#setDiscountOnAction" text="Set Discount">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="setActive" focusTraversable="false" layoutX="479.0" layoutY="158.0" mnemonicParsing="false" onAction="#setActiveStateOnAction" text="Active State">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </CheckBox>
+      <JFXButton fx:id="btnSave" buttonType="RAISED" focusTraversable="false" layoutX="531.0" layoutY="277.0" onAction="#saveOnAction" prefHeight="38.0" prefWidth="83.0" ripplerFill="WHITE" style="-fx-background-color: green;" text="Save" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" focusTraversable="false" layoutX="531.0" layoutY="340.0" onAction="#updateOnAction" prefHeight="38.0" prefWidth="83.0" ripplerFill="WHITE" style="-fx-background-color: blue;" text="Update" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" buttonType="RAISED" focusTraversable="false" layoutX="531.0" layoutY="405.0" onAction="#deleteOnAction" prefHeight="38.0" prefWidth="83.0" ripplerFill="WHITE" style="-fx-background-color: red;" text="Delete" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblManageItem" focusTraversable="false" layoutX="18.0" layoutY="233.0" prefHeight="253.0" prefWidth="504.0">
+        <columns>
+          <TableColumn fx:id="colPropertyID" prefWidth="75.0" text="Property ID" />
+          <TableColumn fx:id="colBatch" prefWidth="75.0" text="Batch" />
+            <TableColumn fx:id="colPrice" prefWidth="65.0" text="Price" />
+            <TableColumn fx:id="colDiscount" prefWidth="68.0" text="Discount" />
+            <TableColumn fx:id="colQty" prefWidth="53.0" text="Qty" />
+            <TableColumn fx:id="colProductID" prefWidth="73.0" text="Product ID" />
+            <TableColumn fx:id="colActive" prefWidth="94.0" text="Active State" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="btnClose" fitHeight="38.0" fitWidth="40.0" layoutX="3.0" layoutY="6.0" onMouseClicked="#closeOnAction" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/cl.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

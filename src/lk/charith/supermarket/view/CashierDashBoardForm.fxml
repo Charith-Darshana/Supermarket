@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="277.0" prefWidth="523.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.charith.supermarket.controller.CashierDashBoardFormController">
+   <children>
+      <Label layoutX="207.0" text="Cashier">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Line endX="74.0" layoutX="262.0" layoutY="40.0" startX="-74.0" />
+      <Label layoutX="55.0" layoutY="223.0" text="Manage Customer ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="326.0" layoutY="223.0" text="Manage Order ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="btnCustomer" fitHeight="150.0" fitWidth="141.0" layoutX="65.0" layoutY="64.0" onMouseClicked="#customerOnAction" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/cus.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnOrders" fitHeight="150.0" fitWidth="141.0" layoutX="320.0" layoutY="64.0" onMouseClicked="#orderOnAction" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/or.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnClose" fitHeight="40.0" fitWidth="42.0" layoutX="481.0" layoutY="4.0" onMouseClicked="#closeOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/cl.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
